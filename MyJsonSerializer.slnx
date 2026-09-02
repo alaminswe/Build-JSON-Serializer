@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="JsonSerializer.Core/JsonSerializer.Core.csproj" />
+  <Project Path="JsonSerializer.Demo/JsonSerializer.Demo.csproj" />
+  <Project Path="JsonSerializer.Tests/JsonSerializer.Tests.csproj" />
+</Solution>
