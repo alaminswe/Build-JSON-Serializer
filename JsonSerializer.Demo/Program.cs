@@ -1,4 +1,59 @@
-﻿//covering Nested Serialization - Start
+﻿using System.Text.Json.Serialization;
+
+var numbers = new List<int> { 1, 2, 3 };
+var names = new[] { "Alice", "Bob" };
+var dict = new Dictionary<string, object>
+{
+    { "count", 3 },
+    { "items", numbers }
+};
+
+Console.WriteLine(JsonSerializer.Core.JsonSerializer.Serialize(numbers));
+Console.WriteLine(JsonSerializer.Core.JsonSerializer.Serialize(names));
+Console.WriteLine(JsonSerializer.Core.JsonSerializer.Serialize(dict));
+
+//Collections start
+// var user = new User
+// {
+//     Id = 1,
+//     Name = "John",
+//     Skills = new List<string>
+//     {
+//         "C#",
+//         "ASP.NET",
+//         "SQL"
+//     }
+// };
+// var addresses = new List<Address>
+// {
+//     new Address
+//     {
+//         City = "Dhaka",
+//         Country = "Bangladesh"
+//     },
+//     new Address
+//     {
+//         City = "Dinajpur",
+//         Country = "Bangladesh"
+//     }
+// };
+// Console.WriteLine(JsonSerializer.Core.JsonSerializer.Serialize(user));
+// Console.WriteLine(JsonSerializer.Core.JsonSerializer.Serialize(addresses));
+
+// public class Address
+// {
+//     public string City { get; set; } = "";
+//     public string Country { get; set; } = "";
+// }
+// public class User
+// {
+//     public int Id { get; set; }
+//     public string Name { get; set; } = "";
+//     public List<string> Skills { get; set; } = new();
+// }
+//Collections end
+
+//covering Nested Serialization - Start
 
 // var user = new User
 // {
@@ -30,16 +85,16 @@
 //only primitive type -- end
 
 
-public class Address
-{
-    public string City { get; set; } = "";
-    public string Country { get; set; } = "";
-}
+// public class Address
+// {
+//     public string City { get; set; } = "";
+//     public string Country { get; set; } = "";
+// }
 
-public class User
-{
-    public int Id { get; set; }
-    public string Name { get; set; } = "";
-    public bool IsActive { get; set; }
-    public Address? HomeAddress { get; set; }
-}
+// public class User
+// {
+//     public int Id { get; set; }
+//     public string Name { get; set; } = "";
+//     public bool IsActive { get; set; }
+//     public Address? HomeAddress { get; set; }
+// }

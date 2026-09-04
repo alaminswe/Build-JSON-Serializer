@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JsonSerializer.Demo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e5c546d1dee8e125a382d434112c0c48bbd4c12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5f5deb531369fd68db342fdffccdb3568d26466")]
 [assembly: System.Reflection.AssemblyProductAttribute("JsonSerializer.Demo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JsonSerializer.Demo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

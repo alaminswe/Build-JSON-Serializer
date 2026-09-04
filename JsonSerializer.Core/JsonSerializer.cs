@@ -1,8 +1,34 @@
 namespace JsonSerializer.Core;
 using System.Globalization;
+using System.Collections;
 public static class JsonSerializer
 {
+    private static string SerializePrimitive(Type type, object value)
+    {
+        if (type == typeof(string))
+        {
+            var val = EscapeString(value.ToString());
+            return $"\"{val}\"";
+        }
 
+
+        if (type == typeof(int) || type == typeof(long))
+        {
+            return Convert.ToString(value, CultureInfo.InvariantCulture);
+        }
+
+        if (type == typeof(float) || type == typeof(double) || type == typeof(decimal))
+        {
+            return Convert.ToString(value, CultureInfo.InvariantCulture);
+        }
+
+        if (type == typeof(bool))
+        {
+            return value.ToString().ToLower();
+        }
+
+        return "0";
+    }
     private static bool IsPrimitive(Type type)
     {
         return type == typeof(string)
@@ -39,50 +65,46 @@ public static class JsonSerializer
         {
             return SerializePrimitive(type, value);
         }
+        if (value is IDictionary dictionary)
+        {
+            var list = new List<string>();
+            foreach (DictionaryEntry o in dictionary)
+            {
+                var key = EscapeString(o.Key.ToString());
+                var val = Serialize(o.Value);
+                list.Add($"\"{key}\": {val}");
+            }
+
+            return $"{{{string.Join(", ", list)}}}";
+        }
+
+        if (value is IEnumerable enumerable)
+        {
+            var list = new List<string>();
+            foreach (var o in enumerable)
+            {
+                list.Add(Serialize(o));
+            }
+
+            return $"[{string.Join(", ", list)}]";
+        }
 
         var properties = type.GetProperties();
-        var list = new List<string>();
+        var propertyList = new List<string>();
         foreach (var property in properties)
         {
             var name = property.Name;
             var val = property.GetValue(value);
             
             var v = Serialize(val);
-            list.Add($"\"{name}\": {v}");
+            propertyList.Add($"\"{name}\": {v}");
         }
 
-        return $"{{{string.Join(", ", list)}}}";
+        return $"{{{string.Join(", ", propertyList)}}}";
     }
 
     public static T? Deserialize<T>(string json)
     {
         throw new NotImplementedException();
-    }
-
-    private static string SerializePrimitive(Type type, object value)
-    {
-        if (type == typeof(string))
-        {
-            var val = EscapeString(value.ToString());
-            return $"\"{val}\"";
-        }
-
-
-        if (type == typeof(int) || type == typeof(long))
-        {
-            return Convert.ToString(value, CultureInfo.InvariantCulture);
-        }
-
-        if (type == typeof(float) || type == typeof(double) || type == typeof(decimal))
-        {
-            return Convert.ToString(value, CultureInfo.InvariantCulture);
-        }
-
-        if (type == typeof(bool))
-        {
-            return value.ToString().ToLower();
-        }
-
-        return "0";
     }
 }
