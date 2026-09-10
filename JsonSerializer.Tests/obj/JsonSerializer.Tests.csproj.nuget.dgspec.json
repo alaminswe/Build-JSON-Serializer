@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\JsonSerializer.Tests.csproj": {}
+    "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\JsonSerializer.Tests.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj": {
+    "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj",
         "projectName": "JsonSerializer.Core",
-        "projectPath": "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj",
+        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -339,14 +339,14 @@
         }
       }
     },
-    "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\JsonSerializer.Tests.csproj": {
+    "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\JsonSerializer.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\JsonSerializer.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\JsonSerializer.Tests.csproj",
         "projectName": "JsonSerializer.Tests",
-        "projectPath": "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\JsonSerializer.Tests.csproj",
+        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\JsonSerializer.Tests.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -362,8 +362,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj": {
-                "projectPath": "c:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj"
+              "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ServerCamp\\MyJsonSerializer\\JsonSerializer.Core\\JsonSerializer.Core.csproj"
               }
             }
           }
